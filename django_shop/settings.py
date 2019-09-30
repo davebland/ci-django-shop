@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'django_shop.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 try:
-    DATABASES = {'default': dj_database_url.parse(os.environ.get('DB_URL'))}
+    DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
 except:
     DATABASES = {
         'default': {
